@@ -18,8 +18,8 @@ export default {
     padding: 0.75rem;
     justify-content: center;
     margin-bottom: 0;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     width: 100%;
 }
 .footer-text {

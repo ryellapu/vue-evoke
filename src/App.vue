@@ -1,8 +1,12 @@
 <template>
   <div class="main">
     <Header />
-    <div class="content">
-    Body Components
+    <div class="content d-flex flex-column">
+      <!-- <Conditions /> -->
+      <!-- <Binding title="Bindings"/> -->
+      <!-- <StyleBinding /> -->
+      <!-- <MixinApp /> -->
+      <ParentComposer />
     </div>
     <Footer />
   </div>
@@ -11,13 +15,20 @@
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+// import StyleBinding from './components/demos/StyleBinding.vue';
+// import MixinApp from './components/demos/mixins/MixinApp.vue';
+import ParentComposer from './components/demos/composition/ParentComposer.vue';
+// import Conditions from './components/demos/Conditions.vue'
+// import Binding from './components/demos/Binding.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
-  }
+    Footer,
+    // MixinApp,
+    ParentComposer
+}
 }
 </script>
 
@@ -28,13 +39,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow: auto;
+
 }
+
 .main {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  overflow: auto;
 }
+
 .content {
   display: flex;
   justify-content: center;
